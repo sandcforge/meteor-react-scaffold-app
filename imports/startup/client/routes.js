@@ -4,12 +4,31 @@ import {mount} from 'react-mounter';
 import { render } from 'react-dom';
 
 // Import needed templates
+import BlankPage from '../../ui/pages/BlankPage.jsx';
 import MainPage from '../../ui/pages/MainPage.jsx';
-import DefaultFrame from '../../ui/layouts/DefaultFrame.jsx';
+
+import DefaultLayout from '../../ui/layouts/DefaultLayout.jsx';
+import BlankLayout from '../../ui/layouts/BlankLayout.jsx';
+import DesktopLayout from '../../ui/layouts/LayoutWithAppBarAndLeftNev.jsx';
+
+
+
+FlowRouter.route('/desktop', {
+  action() {
+    mount(DesktopLayout, {content: <MainPage />, title:'Meteor React App'});
+  }
+});
 
 
 FlowRouter.route('/', {
   action() {
-    mount(DefaultFrame, {content: <MainPage />});
+    mount(DefaultLayout, {content: <MainPage />});
+  }
+});
+
+
+FlowRouter.route('/blank', {
+  action() {
+    mount(BlankLayout, {content: <BlankPage />});
   }
 });
