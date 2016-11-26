@@ -15,13 +15,13 @@ import DesktopLayout from '../../ui/layouts/LayoutWithAppBarAndLeftNev.jsx';
 
 FlowRouter.route('/', {
   action() {
-    mount(DesktopLayout, {content: <MainPage />, title:'Meteor React Scaffold App'});
+    mount(DesktopLayout, {content: <MainPage />, title:'A Meteor React Scaffold with Material UI'});
   }
 });
 
 FlowRouter.route('/desktop', {
   action() {
-    mount(DesktopLayout, {content: <MainPage />, title:'Meteor React Scaffold App'});
+    mount(DesktopLayout, {content: <MainPage />, title:'A Meteor React Scaffold with Material UI'});
   }
 });
 

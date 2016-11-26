@@ -19,7 +19,7 @@ export default class MainPage extends Component {
 
         <div style={styles.coverContainerStyle}>
           <img style={{width:'50%'}} src={'https://atomate.net/hire-javascript-developers/united-kingdom/london/img/meteor.png'} />
-          <div style={styles.coverTextStyle}>A Meteor Scaffold App with React Frontend Framework</div>
+          <div style={styles.coverTextStyle}>A Meteor React Scaffold with Material UI</div>
           <div style={styles.coverItemStyle}>
             <RaisedButton backgroundColor={'#DC5150'} labelColor= {colorWhite} label="Github"  />
           </div>

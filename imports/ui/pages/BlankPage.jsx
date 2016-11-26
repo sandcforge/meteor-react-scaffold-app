@@ -10,9 +10,9 @@ export default class BlankPage extends Component {
   render() {
 
     return (
-      <div >
-        BlankPage
-      </div>
+      <h1 >
+        A Meteor React Scaffold with Material UI
+      </h1>
     );
   }
 }
