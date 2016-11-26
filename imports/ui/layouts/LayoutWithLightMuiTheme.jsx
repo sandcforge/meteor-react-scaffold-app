@@ -6,7 +6,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 let lightMuiTheme = getMuiTheme(lightBaseTheme);
 
-export default class DefaultLayout extends React.Component {
+export default class LayoutWithLightMuiTheme extends React.Component {
   constructor(props) {
     super(props);
   }

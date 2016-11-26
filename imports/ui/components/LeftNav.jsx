@@ -39,6 +39,7 @@ export default class LeftNav extends React.Component {
         />
         <MenuItem onTouchTap={() => {this._handleClose();FlowRouter.go('/'); } }  >Home Page</MenuItem>
         <MenuItem onTouchTap={() => {this._handleClose();FlowRouter.go('/blank'); } }  >Blank Page</MenuItem>
+        <MenuItem onTouchTap={() => {this._handleClose();FlowRouter.go('/lightmuitheme'); } }  >LightTheme Page</MenuItem>
         <MenuItem onTouchTap={() => {this._handleClose();FlowRouter.go('/desktop'); } }  >Desktop Page</MenuItem>
 
       </Drawer>
